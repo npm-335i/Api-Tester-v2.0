@@ -9,6 +9,12 @@
 
 ---
 
+
+## ✨ Preview
+- **Try it live**: https://api-tester-v2-0-frontend.vercel.app
+
+Note: The link you provided shows the current live version of your API Tester. It's working and ready for you to test APIs! The interface is clean with a dark theme, request panel, and response viewer.
+
 ## ✨ Features
 
 ### 🔌 Core Features
