@@ -63,7 +63,7 @@ API Tester includes built-in support for popular AI providers.
 
 ## AI Quick Setup
 
-Choose your provider and the app automatically configures:
+Choose your provider and the application automatically configures:
 
 - API Endpoint  
 - Required Headers  
@@ -112,7 +112,7 @@ Just paste your API key and start testing.
 ```bash
 git clone https://github.com/npm-335i/api-tester.git
 cd api-tester
-
+```
 
 🖥️ Backend Setup
 cd backend
@@ -147,8 +147,7 @@ Enter API URL
 Select HTTP method
 Add headers if needed
 Add JSON body (POST/PUT/PATCH)
-Click Send or press:
-CTRL + ENTER
+Click Send or press CTRL + ENTER
 🤖 Testing AI APIs
 Open AI Quick Test tab
 Select provider
@@ -202,7 +201,7 @@ api-tester/
         └── styles/
             └── main.css
 ⚡ API Endpoints
-POST Request Proxy
+POST Proxy Request
 POST /api/proxy
 Example Request
 {
@@ -254,32 +253,36 @@ cd backend
 npm run dev
 CORS Issues
 Ensure backend is running
-Check API URL
-Verify CORS enabled
+Verify correct API URL
+Enable CORS in server
 API Key Issues
-Check key validity
+Check validity
 Enable billing if required
-Verify auth headers
+Verify headers
 👨‍💻 Developer
 
 Uzair
 
-GitHub:
-https://github.com/npm-335i
+GitHub: https://github.com/npm-335i
 
 📜 License
 
 MIT License
-
 Free to use and modify.
 
 🤝 Contributing
-Fork repo
+Fork repository
+
 Create branch
+
 git checkout -b feature-name
+
 Commit changes
+
 git commit -m "feat: add feature"
+
 Push branch
+
 git push origin feature-name
 Open Pull Request
 🙏 Acknowledgments
@@ -294,4 +297,5 @@ Insomnia
 🚀 Happy API Testing!
 
 ⭐ Star this repo if you like it
+
 </p> ```
