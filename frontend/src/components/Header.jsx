@@ -30,7 +30,7 @@ const Header = ({ requestCount = 0, onClearHistory = null }) => {
                 Active
               </span>
               <span className="badge-item badge-version">
-                v1.0.0
+                v2.0
               </span>
               <span className="badge-item badge-requests">
                 Requests: <span className="badge-count">{requestCount}</span>
