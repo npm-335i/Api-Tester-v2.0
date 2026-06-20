@@ -1,0 +1,238 @@
+.modal-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.7);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 1000;
+  animation: modalFadeIn 0.3s ease;
+}
+
+@keyframes modalFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.modal-content {
+  background: rgba(20, 20, 30, 0.95);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border-radius: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  padding: 2rem;
+  max-width: 450px;
+  width: 90%;
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.6);
+  animation: modalSlideUp 0.3s ease;
+}
+
+@keyframes modalSlideUp {
+  from {
+    opacity: 0;
+    transform: translateY(20px) scale(0.95);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.modal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.modal-header h3 {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.modal-close {
+  background: rgba(255, 255, 255, 0.04);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+  border-radius: 8px;
+  color: rgba(255, 255, 255, 0.4);
+  cursor: pointer;
+  padding: 0.25rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+  width: 32px;
+  height: 32px;
+}
+
+.modal-close:hover {
+  background: rgba(255, 255, 255, 0.08);
+  color: rgba(255, 255, 255, 0.8);
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+.modal-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  gap: 1rem;
+}
+
+.modal-icon {
+  font-size: 3.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.modal-body h4 {
+  font-size: 1.05rem;
+  font-weight: 500;
+  color: rgba(255, 255, 255, 0.9);
+  margin: 0;
+}
+
+.modal-description {
+  font-size: 0.9rem;
+  color: rgba(255, 255, 255, 0.5);
+  margin: 0;
+  line-height: 1.5;
+}
+
+.modal-security-note {
+  display: flex;
+  align-items: center;
+  gap: 0.6rem;
+  background: rgba(74, 222, 128, 0.06);
+  padding: 0.6rem 1rem;
+  border-radius: 10px;
+  border: 1px solid rgba(74, 222, 128, 0.08);
+  width: 100%;
+  text-align: left;
+}
+
+.modal-security-note svg {
+  flex-shrink: 0;
+}
+
+.modal-security-note span {
+  font-size: 0.75rem;
+  color: rgba(255, 255, 255, 0.5);
+  line-height: 1.4;
+}
+
+.modal-history-count {
+  font-size: 0.85rem;
+  color: rgba(255, 255, 255, 0.4);
+  margin: 0;
+}
+
+.modal-history-count strong {
+  color: #ba80ff;
+  font-weight: 600;
+}
+
+.modal-footer {
+  display: flex;
+  gap: 0.75rem;
+  margin-top: 1.5rem;
+  padding-top: 1.5rem;
+  border-top: 1px solid rgba(255, 255, 255, 0.04);
+}
+
+.btn-modal-cancel,
+.btn-modal-confirm {
+  flex: 1;
+  padding: 0.6rem 1rem;
+  border: none;
+  border-radius: 10px;
+  font-size: 0.85rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+}
+
+.btn-modal-cancel {
+  background: rgba(255, 255, 255, 0.04);
+  color: rgba(255, 255, 255, 0.6);
+  border: 1px solid rgba(255, 255, 255, 0.06);
+}
+
+.btn-modal-cancel:hover {
+  background: rgba(255, 255, 255, 0.08);
+  color: rgba(255, 255, 255, 0.9);
+}
+
+.btn-modal-confirm {
+  background: linear-gradient(135deg, #ef4444, #dc2626);
+  color: white;
+  box-shadow: 0 4px 16px rgba(239, 68, 68, 0.25);
+}
+
+.btn-modal-confirm:hover {
+  transform: translateY(-1px);
+  box-shadow: 0 6px 24px rgba(239, 68, 68, 0.35);
+}
+
+.btn-modal-confirm:active {
+  transform: translateY(0) scale(0.98);
+}
+
+
+@media (max-width: 480px) {
+  .modal-content {
+    padding: 1.5rem;
+    width: 95%;
+  }
+
+  .modal-icon {
+    font-size: 2.5rem;
+  }
+
+  .modal-body h4 {
+    font-size: 0.95rem;
+  }
+
+  .modal-description {
+    font-size: 0.8rem;
+  }
+
+  .modal-security-note span {
+    font-size: 0.65rem;
+  }
+
+  .btn-modal-cancel,
+  .btn-modal-confirm {
+    font-size: 0.75rem;
+    padding: 0.5rem 0.75rem;
+  }
+
+  .modal-footer {
+    flex-direction: column-reverse;
+  }
+
+  .modal-header h3 {
+    font-size: 0.95rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .modal-content {
+    padding: 1.75rem;
+  }
+}
